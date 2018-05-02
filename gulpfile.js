@@ -5,12 +5,12 @@ const imagemin = require('gulp-imagemin');
 const sourcemaps = require('gulp-sourcemaps');
 const htmlmin = require('gulp-htmlmin');
 
-gulp.task('html', () => {
-  return gulp
-    .src('./src/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('./dist/'));
-});
+// gulp.task('html', () => {
+//   return gulp
+//     .src('./src/*.html')
+//     .pipe(htmlmin({ collapseWhitespace: true }))
+//     .pipe(gulp.dest('./dist/'));
+// });
 
 gulp.task('css', () => {
   return gulp
@@ -44,4 +44,4 @@ gulp.task('img', () => {
     .pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('default', ['html', 'css', 'js', 'img']);
+gulp.task('default', ['css', 'js', 'img']);
