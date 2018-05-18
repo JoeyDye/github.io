@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-const gulp = require('gulp');
-const cleanCSS = require('gulp-clean-css');
-const uglify = require('gulp-uglyfly');
-
-gulp.task('minifycss', () => {
-  return gulp
-    .src('./src/styles/*.css')
-    .pipe(cleanCSS({ compatibility: 'ie8' }))
-    .pipe(gulp.dest('./dist/styles'));
-});
-
-gulp.task('minifyjs', () => {
-  return gulp
-    .src('src/scripts/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('dist/scripts'));
-});
-
-gulp.task('default', ['minifycss', 'minifyjs']);
-||||||| merged common ancestors
-=======
 const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglyfly');
@@ -67,4 +45,3 @@ gulp.task('img', () => {
 });
 
 gulp.task('default', ['css', 'js', 'img']);
->>>>>>> 2427f1a2df8e3727e0a16db79ea8aa2a7b5da005
