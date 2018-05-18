@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-prototype",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "scripts.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-uglyfly": "^1.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeyDye/github.io.git"
+  },
+  "keywords": [],
+  "author": "Joey Dye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeyDye/github.io/issues"
+  },
+  "homepage": "https://github.com/JoeyDye/github.io#readme"
+}
