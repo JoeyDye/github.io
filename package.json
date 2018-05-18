@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "portfolio-prototype",
   "version": "1.0.0",
@@ -25,3 +26,36 @@
   },
   "homepage": "https://github.com/JoeyDye/github.io#readme"
 }
+||||||| merged common ancestors
+=======
+{
+  "name": "portfolio-prototype",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "scripts.js",
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-uglyfly": "^1.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeyDye/github.io.git"
+  },
+  "keywords": [],
+  "author": "Joey Dye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeyDye/github.io/issues"
+  },
+  "homepage": "https://github.com/JoeyDye/github.io#readme"
+}
+>>>>>>> 2427f1a2df8e3727e0a16db79ea8aa2a7b5da005
