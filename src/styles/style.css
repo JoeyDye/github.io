@@ -1,7 +1,28 @@
+:root {
+  --brandPrimary: #4b278c;
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 4.5rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+h2,
+h3,
+p {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+/* Nav */
+.nav-links {
+  text-transform: uppercase;
 }
 
 /* Header */
@@ -29,7 +50,7 @@ h1 {
 /* About */
 .profile-img {
   max-height: 350px;
-  padding-top: 25px;
+  margin-top: 20px;
 }
 
 /* Projects */
@@ -39,7 +60,7 @@ h1 {
 }
 
 .tabs .indicator {
-  background-color: #4b278c;
+  background-color: var(--brandPrimary);
 }
 
 .tabs .tab a.active {
@@ -80,15 +101,41 @@ h1 {
   cursor: pointer;
 }
 
-.contact {
+.contact-form {
   position: relative;
   z-index: 1;
+  height: 500px;
+  width: 100%;
+  padding: 1.6rem !important;
+  background: #fff;
+}
+
+.contact-row {
+  padding: 0;
+  margin: 0;
 }
 
 input[type='text']:not(.browser-default):focus:not([readonly]),
+input[type='email']:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #4b278c;
-  box-shadow: 0 1px 0 #4b278c;
+  border-bottom: 1px solid var(--brandPrimary);
+  box-shadow: 0 1px 0 var(--brandPrimary);
+}
+
+input[type='text']:not(.browser-default):focus:not([readonly]) + label,
+input[type='email']:not(.browser-default):focus:not([readonly]) + label {
+  color: var(--brandPrimary);
+}
+
+.input-field .prefix.active {
+  color: var(--brandPrimary);
+}
+
+.col-map {
+  position: relative;
+  height: 500px;
+  max-height: 100%;
+  width: 100%;
 }
 
 #map {

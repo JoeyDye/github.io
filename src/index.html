@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Import Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800" rel="stylesheet">
   <!-- Import Materialize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <!-- Import Material Icons -->
@@ -30,8 +30,8 @@
             </a>
             <a href="#!" data-target="mobile-nav" class="sidenav-trigger">
               <i class="material-icons">menu</i>
-              <ul class="right hide-on-med-and-down">
-                <li class="active">
+              <ul class="right hide-on-med-and-down nav-links">
+                <li>
                   <a href="#home" class="white-text">Home</a>
                 </li>
                 <li>
@@ -92,7 +92,7 @@
     <section id="about" class="section about-section purple darken-4 white-text scrollspy">
       <div class="container">
         <div class="row">
-          <div class="col s12 m6 valign-center about-image">
+          <div class="col s12 m6 valign-wrapper about-image">
             <img src="images/joey-and-nicole-chicago.jpg" alt="Joey and Nicole in Chicago" class="responsive-img profile-img circle">
           </div>
           <div class="col s12 m6 about-content">
@@ -132,7 +132,7 @@
                     </ul>
                   </div>
                   <div id="test1" class="col s12 card-content">
-                    <p>Smart Brain is a React app that detect faces in images. The more images you submit, the higher your rank.
+                    <p>Smart Brain detects faces in images. The more you submit, the higher your rank.
                     </p>
                   </div>
                   <div id="test2" class="col s12">
@@ -182,7 +182,7 @@
                     </ul>
                   </div>
                   <div id="test4" class="col s12 card-content">
-                    <p>Client panel is an Angular app that allows you to read, update, and delete account receivables.</p>
+                    <p>Client panel allows you to read, update, and delete account receivables.</p>
                   </div>
                   <div id="test5" class="col s12">
                     <div class="row specs">
@@ -266,8 +266,7 @@
                     </ul>
                   </div>
                   <div id="test10" class="col s12 card-content">
-                    <p>Bug Run is a play off of the classic game Frogger. Select a player and collect the star without getting
-                      hit.
+                    <p>Bug Run is a play off of the classic game Frogger. Collect the star without getting hit.
                     </p>
                   </div>
                   <div id="test11" class="col s12">
@@ -399,23 +398,35 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section contact-section scrollspy">
-      <div id="map"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m4 offset-m7 white">
-            <div class="contact card-panel white">
-              <h3>Contact</h3>
-              <br>
-              <div class="phone">
-                <i class="material-icons purple-text text-darken-4 left">phone</i> 615.586.3316
-              </div>
-              <br>
-              <div class="phone">
-                <i class="material-icons purple-text text-darken-4 left">email</i> joey@joeydye.com
-              </div>
+    <section id="contact" class="contact-section scrollspy">
+      <div class="row contact-row">
+        <div class="col s12 m6 col-map">
+          <div id="map"></div>
+        </div>
+        <div class="col s12 m6 contact-form">
+          <form method="POST" netlify>
+            <h2 class="grey-text text-darken-4">Contact Me</h2>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">person</i>
+              <input type="text" name="first name" id="first-name" class="validate">
+              <label for="first-name">First Name</label>
             </div>
-          </div>
+            <div class="input-field col s6">
+              <input type="text" name="last-name" id="last-name" class="validate">
+              <label for="last-name">Last Name</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix">email</i>
+              <input type="email" name="email" id="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix">message</i>
+              <input type="text" name="message" id="message" class="materialize-textarea">
+              <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn grey darken-4 right">Submit</button>
+          </form>
         </div>
       </div>
     </section>
@@ -442,7 +453,7 @@
           </ul>
         </div>
         <div class="col s12 m4 offset-m2">
-          <h5 class="white-text">Links</h5>
+          <h5 class="white-text">Sitemap</h5>
           <ul>
             <li>
               <a class="white-text" href="#home">Home</a>
